@@ -20,6 +20,7 @@ export function words(sentence){
           continue
         }
         else{
+          sentenceArray[count] = sentenceArray[count].toLowerCase()
           if(occurences.hasOwnProperty(sentenceArray[count])){
             occurences[sentenceArray[count]] += 1
           }// end this if block

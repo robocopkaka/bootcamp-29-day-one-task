@@ -38,4 +38,10 @@ describe('Find occurences of words', () =>{
 
     expect(words("1243 1 tick tick stuck 50")).to.deep.equal(expectedResult)
   })
+
+  it('should not treat uppercase words, or words with a single uppercase letter differently', ()=>{
+    const expectedResult = {"tick":2, "tack":2}
+
+    expect(words("tick Tick TACK tack")).to.deep.equal(expectedResult)
+  })
 })

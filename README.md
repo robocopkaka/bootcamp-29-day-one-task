@@ -7,9 +7,8 @@
 + Clone this repo to a directory on your system.
 + Run `npm install` to install all dependencies.
 + Run `npm install -g mocha` to install mocha globally, which would be used in testing.
-+ To run tests, use this command - ` mocha --compilers js:babel-register --require babel-polyfill
-`
++ To run tests, use this command - `npm test`
 
 ## File Location
 * Tests (test/wordsTest.js)
-* Code (code/words.js) 
+* Code (code/words.js)
